@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Logotipo/Nodo.png" type="image/x-icon">
+    <title>Nodo</title>
+    <style>
+        .enquadrar{
+            display: flex;
+            padding:90px 4%;
+           
+        }
+        .texto{
+            position: relative;
+            font-size:28px;;
+        }
+        .texto h1{
+            color: var(--cor_1);
+        }
+        .texto p{
+            color: var(--cor_letra);
+        }
+        .Imagem{
+             padding:40px 3%;
+            height: 470px;
+            width: 550px;
+            border-radius: 80px;
+        }
+        .botoes{
+            padding: 0px 5%;
+        }
+        .botoes button{
+            padding: 18px;
+            border-radius: 30px;
+            font-family: var(--fonte);
+            font-size: 18px;
+        }
+        .explorar{
+           border: 3px  solid var(--cor_2);
+            background-color: #fff;
+            color: var(--cor_2);
+            transition: 0.8s;
+        }
+        .explorar:hover{
+            background-color: var(--cor_2);
+            color: #fff;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .cards{
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card{
+            position: relative;
+            width: 300px;
+            background:linear-gradient(135deg, #0A9AFF 0%, #FF6B35 100%);
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 35px;
+            transition: 0.6s;
+        }
+        .card:hover{
+            transform: translateY(-5px);
+        }
+        .card h2{
+            color: #fff;
+        }
+        </style>
+</head>
+<body>
+    <nav>
+        <div class="Logo">
+            <img src="Logotipo/Nodo.png" alt="">
+            <h1>Nodo</h1>
+        </div>
+        <ul>
+            <li><a href="#Inicio">Início</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="">Escolas</a></li>
+            <li><a href="">Eventos</a></li>
+            <li><a href="">Comunidades</a></li>
+            <li><a href="">Entrar</a></li>
+            <div class="criar">
+                <button class="conta"><a href="">Criar Conta</a></button>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Boas-Vindas -->
+    <div class="enquadrar" id="Inicio">
+        <div class="texto">
+            <h1>Conecte-se ao Mundo pela Educação</h1>
+            <p>O Nodo é a plataforma global que une estudantes, professores e escolas de todos os países. Participe de eventos, crie seu perfil académico e explore oportunidades internacionais.</p>
+            <div class="botoes">
+                <a href="#"><button class="conta" style="color: #fff;font-size:20px;">Criar Conta Agora</button></a>
+                <a href="#"><button class="explorar">Explorar Comunidades</button></a>
+            </div>
+        </div>
+        <!--Imagem-->
+        <div>
+            <div><img src="Logotipo/pessoas.jpg"  class="Imagem" alt="Imagem"></div>
+        </div>
+    </div>
+    <!-- Sobre -->
+    <section id="Sobre">
+        <pre>
+
+
+
+
+
+        </pre>
+        <h1 style="text-align: center; font-size: 40px;">Como Funciona o Nodo</h1>
+         <div  class="cards">
+            <div class="card">
+                <h2>Conexão</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quas laboriosam! Vel obcaecati dolorem optio similique ipsum sequi quasi reiciendis, debitis eius esse consequuntur reprehenderit nihil distinctio impedit enim nostrum?</p>
+            </div>
+            <div class="card">
+                <h2>Eventos Educacionais</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quas laboriosam! Vel obcaecati dolorem optio similique ipsum sequi quasi reiciendis, debitis eius esse consequuntur reprehenderit nihil distinctio impedit enim nostrum?</p>
+            </div>
+            <div class="card">
+                <h2>Rede de Escolas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quas laboriosam! Vel obcaecati dolorem optio similique ipsum sequi quasi reiciendis, debitis eius esse consequuntur reprehenderit nihil distinctio impedit enim nostrum?</p>
+            </div>
+            <div class="card">
+                <h2>Perfil Académico</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quas laboriosam! Vel obcaecati dolorem optio similique ipsum sequi quasi reiciendis, debitis eius esse consequuntur reprehenderit nihil distinctio impedit enim nostrum?</p>
+            </div>
+            <div class="card">
+                <h2>Comunicação</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quas laboriosam! Vel obcaecati dolorem optio similique ipsum sequi quasi reiciendis, debitis eius esse consequuntur reprehenderit nihil distinctio impedit enim nostrum?</p>
+            </div>
+            <div class="card">
+                <h2>Comunidades</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quas laboriosam! Vel obcaecati dolorem optio similique ipsum sequi quasi reiciendis, debitis eius esse consequuntur reprehenderit nihil distinctio impedit enim nostrum?</p>
+            </div>
+         </div>
+    </section>
+</body>
+</html>

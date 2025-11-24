@@ -1,0 +1,132 @@
+*{
+    margin: 0.4;
+    box-sizing: border-box;
+}
+:root{
+    --cor_1:#2388FF;
+    --cor_2:#FF9B23;
+    --fundo:linear-gradient(135deg, #0A9AFF 0%, #FF6B35 100%);
+    --cor_letra:rgba(0,0,0,0.7);
+    --fonte:Times New Roman;
+}
+nav{
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    width: 99%;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+nav ul{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 366px;
+    align-items: center;
+    gap: 3px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-family: var(--fonte);
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a {
+    position: relative; 
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--fonte);
+    color: rgba(0,0,0,0.7);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: color 0.3s ease;
+}
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    background-color: var(--cor_2);
+    transition: width 0.3s ease;
+}
+nav ul li a:hover {
+    color: var(--cor_1);
+    transform: translateY(-2px);
+    transition: 0.8s;
+}
+
+nav ul li a:hover::after {
+    opacity: 1;
+    transform: translateY(-2px);
+    transition: 0.8s;
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    font-style: italic;
+    color: var(--cor_1);
+    font-family: var(--fonte);
+    margin-left: 40px;
+    gap: 7px;
+}
+.Logo img{
+    margin: 10px;
+    border: 3px solid var(--cor_1);
+    transition: 1s;
+    border-radius: 35px;
+    width: 70px;
+    height: 70px;
+}
+.Logo img:hover{
+    cursor: pointer;
+    background-color: var(--cor_2);
+    transform: scale(1.09);
+}
+.criar{
+    display: flex;
+    gap: 12px;
+    font-family: var(--fonte);
+}
+.criar button a{
+    border: none;
+    color: #fff;
+    text-decoration: none;
+}
+.conta{
+    border: solid 2px var(--cor_1);
+    background-color: var(--cor_1);
+    padding: 17px;
+    border-radius: 25px;
+    font-family: var(--fonte);
+    font-size: 18px;
+    border: none;
+    transition: 1s;
+}
+.conta:hover{
+    background:linear-gradient(to left, var(--cor_2), var(--cor_1));
+    cursor: pointer;
+    animation: bater 1.4s infinite;
+}
+@keyframes bater{
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
